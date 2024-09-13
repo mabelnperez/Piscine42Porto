@@ -6,31 +6,32 @@
 /*   By: mabnasci <mabnasci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 12:58:03 by mabnasci          #+#    #+#             */
-/*   Updated: 2024/09/11 18:52:32 by mabnasci         ###   ########.fr       */
+/*   Updated: 2024/09/12 16:12:18 by mabnasci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void    ft_ultimate_ft(int *********nbr)
+void	ft_ultimate_ft(int *********nbr)
 {
-    *********nbr = 42;
+	*********nbr = 42;
 }
-
 /*
-int main(void)
+int	main(void)
 {
-    int n;
-    int *nbr1 = &n;
-    int **nbr2 = &nbr1;
-    int ***nbr3 = &nbr2;
-    int ****nbr4 = &nbr3;
-    int *****nbr5 = &nbr4;
-    int ******nbr6 = &nbr5;
-    int *******nbr7 = &nbr6;
-    int ********nbr8 = &nbr7;
-    ft_ultimate_ft(&nbr8);
-    printf("%i", n);
-    return (0);
+	int	n;
+	int	*nbr[8];
+
+	nbr[0] = &n;
+	nbr[1] = &nbr[0];
+	nbr[2] = &nbr[1];
+	nbr[3] = &nbr[2];
+	nbr[4] = &nbr[3];
+	nbr[5] = &nbr[4];
+	nbr[6] = &nbr[5];
+	nbr[7] = &nbr[6];
+	ft_ultimate_ft(&nbr[7]);
+	printf("%i", n);
+	return (0);
 }
 */

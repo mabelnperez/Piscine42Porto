@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabnasci <mabnasci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 09:53:23 by mabnasci          #+#    #+#             */
-/*   Updated: 2024/09/13 10:17:15 by mabnasci         ###   ########.fr       */
+/*   Created: 2024/09/13 10:12:40 by mabnasci          #+#    #+#             */
+/*   Updated: 2024/09/13 12:17:58 by mabnasci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void    ft_putstr(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
-}
+    int i;
 
-int	main(void)
+    i = 0;
+    while (str[i] != '\0')
+    {
+        write(1, &str[i], 1);
+        i++;
+    } 
+}
+int main(void)
 {
-	int	div;
-	int	mod;
+    char    str[] = "Mabel\n";
 
-	ft_div_mod(10, 3, &div, &mod);
-	printf("Div: %d, Mod: %d\n", div, mod);
-	return (0);
+    ft_putstr(str);
+    return(0);
 }
-
