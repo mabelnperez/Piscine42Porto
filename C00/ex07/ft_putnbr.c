@@ -6,18 +6,17 @@ void	ft_putchar(char c)
 }
 void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)
+	long n = nb
+	if (n < 0)
 	{
+		n = n * (-1);
 		ft_putchar('-');
-		ft_putchar('2');
-		ft_putnbr(147483648);
-		return (0);
 	}
-	if (nb >= 10)
+	if (n >= 10)
 	{
-		ft_putchar(nb / 10);
+		ft_putnbr(n / 10);
 	}
-	ft_putchar(nb % 10 + '0');
+	ft_putchar(n % 10 + '0');
 }
 
 int	main(void)
